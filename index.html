@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function calculator</title>
+    </head>
+    <body style="background-color:#F99B53;">
+        <center>
+            <br><br><br><br>
+            <h1>FUNCTION CALCULATOR</h1>
+            <hr width="60%">
+            <h3>ENTER A VALUE OF 'X':</h3><input name="num1" type="text" size=20 id='num1'/>
+            <br><br>
+            <center><button onclick="func()">FIND VALUE</button>
+            <script>
+                function func(){
+                    var inputVal =parseFloat(document.getElementById('num1').value);
+                    let res;
+                    res=(inputVal + inputVal/2 + inputVal/4 + inputVal/8);
+                    alert("THE REQUIRED VALUE FOR X=" + inputVal +" IS:  "+res);
+
+
+                }
+           </script>
+        </center>            
+    </body>
+</html>
